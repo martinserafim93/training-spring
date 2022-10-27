@@ -14,7 +14,7 @@ public class OrderService {
     private OrderRepository orderRepository;
 
     public Order getProductByName(String productName) {
-        return orderRepository.getByProductName(productName);
+        return orderRepository.getProductByName(productName);
     }
     public List<Order> getOrder() {
         return orderRepository.findAll();
